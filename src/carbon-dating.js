@@ -18,8 +18,6 @@ const HALF_LIFE_PERIOD = 5730;
  *
  */
 function dateSample(sampleActivity) {
-  throw new NotImplementedError('Not implemented');
-  // following solution should be correct, but tests fail. left NotImplementedError just to not catch errors
   if(typeof sampleActivity !== 'string') {
     return false;
   }
