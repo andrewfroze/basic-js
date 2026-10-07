@@ -27,7 +27,7 @@ function dateSample(sampleActivity) {
     return false;
   }
 
-  return Math.round(Math.log2(MODERN_ACTIVITY / activity) * HALF_LIFE_PERIOD);
+  return Math.ceil(Math.log2(MODERN_ACTIVITY / activity) * HALF_LIFE_PERIOD);
 }
 
 module.exports = {
